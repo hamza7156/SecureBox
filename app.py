@@ -25,7 +25,7 @@ from time import time
 
 # In-memory store for login attempts (IP: {count, timestamp})
 login_attempts = defaultdict(lambda: {'count': 0, 'timestamp': 0})
-ATTEMPT_LIMIT = 10
+ATTEMPT_LIMIT = 5
 TIME_WINDOW = 60  # 1 minute for testing
 
 app = Flask(__name__)
